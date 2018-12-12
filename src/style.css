@@ -1,0 +1,39 @@
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+input, input:focus {
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    padding: 10px;
+    width: 100%;
+}
+
+.col {
+    margin-left: auto;
+    left: auto;
+    right: auto;
+    float: left;
+    padding: 0 5px;
+}
+
+img {
+    width: 100px;
+    border-radius: 100%;
+}
+
+.user-name {
+    font-weight: bold;
+}
