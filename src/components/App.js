@@ -1,6 +1,5 @@
 import React from "react";
 import User from "./User";
-import "../style.css";
 
 class App extends React.Component {
   constructor(props) {
@@ -10,6 +9,10 @@ class App extends React.Component {
     this.state = { userName: "", userInfo: null };
   }
 
+  /**
+   * callback function handling user info
+   * @param userInfo object that includes github user information
+   */
   handleUserInfo(userInfo) {
     this.setState({ userInfo });
   }
@@ -50,11 +53,9 @@ class App extends React.Component {
 
           <button
             id="fetch-button"
-            onClick={this.fetchGithubUser.bind(
-              this,
-              this.state.userName,
-              this.handleUserInfo
-            )}
+            onClick={e => {
+              this.fetchGithubUser(this.state.userName, this.handleUserInfo);
+            }}
           >
             Bring Github User
           </button>
